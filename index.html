@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sam's Portfolio</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/81182d70ef.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li >
+            <a href="#homePage"
+              ><img src="assets/Self Icon.png" alt="Logo" />
+              <p style="padding-left: 1rem">Miraj <span>Samee</span></p></a
+            >
+          </li>
+          <li class="hideOnMobile"><a href="#aboutMe">About Me</a></li>
+          <li class="hideOnMobile"><a href="#skill-section">Skills</a></li>
+          <li class="hideOnMobile"><a href="#experience-section">Experience</a></li>
+          <li class="hideOnMobile"><a href="#portfolio-section">Portfolio</a></li>
+          <li onclick=showSidebar() style="padding: 0.5rem 1rem 0 1rem;" class="hideOnDeskstop">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="26px"
+              viewBox="0 -960 960 960"
+              width="26px"
+              fill="#0d1b2a"
+            >
+              <path
+                d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+              />
+            </svg>
+          </li>
+        </ul>
+        <ul class="sidebar">
+          <li onclick=hideSidebar()>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="26px"
+              viewBox="0 -960 960 960"
+              width="26px"
+              fill="#EAE8FF"
+            >
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+              />
+            </svg>
+          </li>
+          <li><a href="#aboutMe">About Me</a></li>
+          <li><a href="#skill-section">Skills</a></li>
+          <li><a href="#experience-section">Experience</a></li>
+          <li><a href="#portfolio-section">Portfolio</a></li>
+        </ul>
+      </nav>
+      <div id="homePage">
+        <img src="assets/logo.png" alt="logo" />
+        <div class="homeContent">
+          <h1>
+            I'm <span style="color: #0d1b2a;">Samee</span> <br />
+            a <span class="typeEffect"></span>
+          </h1>
+          <ul>
+            <li><a href=""><i class="fa-brands fa-artstation"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section id="aboutMe">
+        
+        <div class="aboutMeText"><h2>About me</h2>
+  
+          <p>
+            My name is Miraj Mahabub Samee, and I am an aspiring digital artist, graphics designer & web developer. My journey began with a fascination for 2D art in my childhood, which later grew into a passion for various creative disciplines. At SMUCT, I broadened my interests to include design and 3D modeling, enriching my artistic skills.
+            <br> <br>
+            Recently, my fascination has turned toward web development, where I see the opportunity to blend my artistic vision with technical prowess. The process of creating visually captivating and user-friendly websites intrigues me, and I am eager to dive into this field. I look forward to crafting engaging digital experiences that combine aesthetics with practical functionality, contributing to the evolving landscape of web design.
+          </p></div>
+          <div class="education">
+            <h2>Education</h2>
+            <ul>
+              <li><h3>SHANTO-MARIUM UNIVERSITY </h3>
+              <p>BA(Hons) in Graphics Design & Multimedia</p></li>
+              <li><h3>LANGARA COLLEGE</h3>
+                <p>BA(Hons) in Graphics Design & Multimedia</p></li>
+              <li><h3>PROGRAMMING HERO</h3>
+                  <p>Web Development Bootcamp</p></li>
+            </ul>
+          </div>
+      </section>
+      <section id="skill-section">
+        <div>
+          <h2>Skills</h2>
+          <div class="skills-content">
+              <div class="skillsIdo">
+                  <h3>What I Do:</h3>
+                  <ul>
+                      <li><i class="fa-solid fa-palette"></i>Digital Illustration</li>
+                      <li><i class="fa-solid fa-cube"></i>3D Modeling</li>
+                      <li><i class="fa-solid fa-file-video"></i>Animation</li>
+                      <li><i class="fa-solid fa-video"></i>Video Editing</li>
+                      <li><i class="fa-solid fa-gift"></i>Motion Graphics</li>
+                      <li><i class="fa-brands fa-github"></i>Web Development</li>
+                  </ul>
+              </div>
+              <div class="toolsIuse">
+                  <h3>What I Use:</h3>
+                  <ul>
+                      <li>Photoshop</li>
+                      <li>Illustrator</li>
+                      <li>Premier Pro</li>
+                      <li>Aftereffect</li>
+                      <li>Animate</li>
+                      <li>Harmony</li>
+                      <li>3ds Max</li>
+                      <li>Vray</li>
+                      <li>Blender</li>
+                      <li>HTML</li>
+                      <li>CSS</li>
+                      <li>JavaScript</li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+      </section>
+      <section id="experience-section">
+        <h2>Experience</h2>
+        <div class="experience">
+        <div class="experience-item">
+            <h2>SHANTO-MARIUM UNIVERSITY <span>2018 - 2023</span></h2>
+            <p>I have successfully completed a diverse array of projects as part of my academic pursuits, encompassing digital art, 2D animation, motion graphics, video editing, and 3D modeling.</p>
+        </div>
+        <div class="experience-item">
+            <h2>FIVERR <span>2022 - Present</span></h2>
+            <p>I am a seasoned freelance artist with over 2 years of experience on Fiverr, currently holding a Level 2 seller designation. My diverse portfolio boasts over 350 completed projects for 100+ satisfied clients, encompassing logo and character design, board game and music/book cover illustration, and digital painting.</p>
+        </div>
+        <div class="experience-item">
+            <h2>COMMISSIONS <span>2022 - Present</span></h2>
+            <p>I take on professional art commissions, working with clients through my social media pages and locally. I also enjoy sharing my creative process by streaming live art sessions on Twitch and YouTube.</p>
+        </div>
+        <div class="experience-item">
+          <h2>PERSONAL PROJECTS <span>2020 - Present</span></h2>
+          <p>I have undertaken several personal projects to further hone my skills, including developing a portfolio of digital paintings and exploring new art styles and techniques. These projects have enabled me to experiment with different mediums and grow as an artist.</p>
+      </div>
+    </div></section>
+    <section id="portfolio-section">
+      <h2>Portfolio</h2>
+      <ul>
+        <li><img src="assets/art (1).png" alt="Portfolio-item"></li>
+        <li><img src="assets/art (2).png" alt="Portfolio-item"></li>
+        <li><img src="assets/art (3).png" alt="Portfolio-item"></li>
+        <li><img src="assets/art (5).png" alt="Portfolio-item"></li>
+        <li><img src="assets/art (9).png" alt="Portfolio-item"></li>
+        <li><img src="assets/art (6).png" alt="Portfolio-item"></li>
+        <li><img src="assets/art (7).png" alt="Portfolio-item"></li>
+        <li><img src="assets/art (27).png" alt="Portfolio-item"></li>
+        <li><img src="assets/art (10).png" alt="Portfolio-item"></li>
+        <li><img src="assets/art (15).png" alt="Portfolio-item"></li>
+        <li><img src="assets/art (14).png" alt="Portfolio-item"></li>
+        <li><img src="assets/art (23).png" alt="Portfolio-item"></li>
+        <li><img src="assets/art (26).png" alt="Portfolio-item"></li>
+        <li><img src="assets/art (28).png" alt="Portfolio-item"></li>
+        <li><img src="assets/art (25).png" alt="Portfolio-item"></li>
+        <li><img src="assets/art (17).png" alt="Portfolio-item"></li>
+        <li><img src="assets/art (18).png" alt="Portfolio-item"></li>
+        <li><img src="assets/art (22).png" alt="Portfolio-item"></li>
+      </ul>
+    </section>
+    </main>
+    <footer><p>&copy; 2024 Miraj Samee. All rights reserved.</p> 
+      </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed= new Typed('.typeEffect',{
+        strings: ["Digital Artist","Web Developer","Graphics Designer"],
+        typeSpeed: 150,
+        backSpeed: 50,
+        loop: true,
+          
+      })
+      function showSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display='flex'
+      }
+      function hideSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display='none'
+      }
+    </script>
+  </body>
+</html>

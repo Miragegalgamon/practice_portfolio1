@@ -1,0 +1,431 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #EAE8FF;
+    color: #0d1b2a;
+    line-height: 1.5;
+    font-family: "Poppins", sans-serif;
+    background-image: url('../assets/mobile_bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+h1 {
+    font-family: "Montserrat", "Poppins", sans-serif;
+    font-weight: 900;
+    font-size: 2rem;
+
+}
+
+h1 span {
+    font-family: "Dancing Script", cursive;
+    color: #515e91;
+}
+
+h2 {
+    font-family: "Montserrat", "Poppins", sans-serif;
+    font-weight: 800;
+}
+
+nav {
+    background-color: #1b263b38;
+    backdrop-filter: blur(5px);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+nav ul {
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+nav li {
+    height: 64px;
+}
+
+nav a {
+    height: 100%;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    color: #0d1b2a;
+}
+
+nav a:hover {
+    background-color: #0d1b2a;
+    color: #EAE8FF;
+
+}
+
+
+nav li:first-child {
+    margin-right: auto;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    z-index: 999;
+    background-color: #0d1b2aef;
+    backdrop-filter: blur(5px);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+
+
+.sidebar li {
+    width: 100%;
+}
+
+.sidebar a {
+    width: 100%;
+    color: #EAE8FF;
+}
+
+.sidebar li:first-child {
+    padding: 1rem;
+}
+
+#homePage {
+    height: 82vh;
+    display: grid;
+    grid-template-rows: 1fr 0.6fr;
+}
+
+#homePage img {
+    width: 60%;
+    margin: auto;
+    padding: 7rem 1rem 1rem 1rem;
+}
+
+.homeContent {
+    text-align: center;
+}
+
+.homeContent ul {
+    padding-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.homeContent ul li {
+    font-size: 1.5rem;
+    color: #1b263b;
+    padding: 0 0.5rem;
+
+}
+
+#aboutMe {
+    display: grid;
+    padding: 2rem;
+    gap: 1rem;
+}
+
+h3 {
+    color: #515e91;
+}
+
+a {
+    color: #515e91;
+}
+
+.education ul li {
+    padding: 1rem 0;
+}
+
+#skill-section {
+    padding: 2rem;
+}
+
+
+
+.skills-content h3 {
+    padding: 1rem 0;
+}
+
+.toolsIuse ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.toolsIuse ul li {
+    background-color: #1b263b;
+    color: aliceblue;
+    padding: 1rem;
+    border-radius: 15px;
+}
+
+.toolsIuse ul li:hover {
+    background-color: #515e91;
+}
+
+.skillsIdo ul li {
+    padding: 0.5rem 0;
+
+}
+
+.skillsIdo ul li a {
+    font-size: 1.5rem;
+}
+
+.skillsIdo ul li i {
+    padding-right: 1rem;
+    color: #1b263b;
+    font-size: 1.5rem;
+
+}
+
+#experience-section {
+    padding: 2rem;
+}
+
+#experience-section h2 {
+    padding-bottom: 1rem;
+}
+
+.experience {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    max-width: 1100px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.experience-item {
+    display: grid;
+}
+
+.experience-item h2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    font-size: 18px;
+    color: #1b263b;
+    border-bottom: 1px solid #515e91;
+    padding-bottom: 5px;
+}
+
+.experience-item h2 span {
+    font-size: 14px;
+    color: #515e91;
+}
+
+.experience-item p {
+    margin: 10px 0 0;
+    font-size: 14px;
+    color: #555555;
+    line-height: 1.6;
+}
+
+#portfolio-section {
+    padding: 2rem;
+}
+
+#portfolio-section h2 {
+    padding-bottom: 1rem;
+}
+
+#portfolio-section ul {
+    display: grid;
+    gap: 1rem;
+}
+
+#portfolio-section li img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.hideOnMobile {
+    display: none;
+}
+
+footer {
+    background-color: #0d1b2a;
+    color: aliceblue;
+    padding: 2rem;
+    text-align: center;
+}
+
+
+/* Table screen Style */
+@media screen and (min-width: 700px) {
+    body {
+        background-image: url('..//assets/tablet.png');
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .sidebar {
+        width: 250px;
+    }
+
+    #homePage {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 60vh;
+        gap: 1.5rem;
+    }
+
+    #homePage img {
+        width: 100%;
+        max-width: 420px;
+        margin: auto;
+
+    }
+
+    .homeContent {
+        margin: 12rem 0 0 0;
+        padding-top: 2rem;
+        text-align: left;
+    }
+
+    .homeContent ul {
+        padding-top: 1rem;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    main {
+        max-width: 6500px;
+        margin: auto;
+    }
+
+    #aboutMe {
+        margin-top: 3rem;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .toolsIuse ul {
+        display: grid;
+        text-align: center;
+    }
+
+    .skillsIdo {
+        border-right: 1px solid #1b263b;
+    }
+
+    .skills-content {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 1rem;
+    }
+
+    #experience-section {
+        padding-left: 2rem;
+    }
+
+    .experience {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #portfolio-section ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+/* Desktop screen Style */
+@media screen and (min-width: 1100px) {
+    body {
+        background-image: url('..///assets/desktopbg.png');
+    }
+
+    .hideOnDeskstop {
+        display: none;
+    }
+
+    .hideOnMobile {
+        display: flex;
+    }
+
+    .toolsIuse ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+
+    main {
+        max-width: 1100px;
+        margin: auto;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    #homePage {
+        height: 100vh;
+        max-width: 1100px;
+        margin: auto;
+    }
+
+    .homeContent {
+        padding-left: 4rem;
+        padding-top: 12rem;
+    }
+
+    #homePage img {
+        width: 100%;
+        padding-top: 15rem;
+        max-width: 550px;
+        margin: auto;
+
+    }
+
+    #aboutMe {
+        margin-top: 3rem;
+        grid-template-columns: 2fr 1fr;
+        gap: 2rem;
+    }
+
+    .skills-content {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 2rem;
+    }
+
+    .experience {
+        gap: 2rem;
+    }
+
+    #portfolio-section ul {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
